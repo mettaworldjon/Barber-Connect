@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE84221CE99C0009882F /* Color+Hex.swift */; };
+		4938FE87221CEEC60009882F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE86221CEEC60009882F /* RegisterController.swift */; };
+		4938FE8A221CFF380009882F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE89221CFF380009882F /* CustomTextField.swift */; };
+		4938FE8E221D07D50009882F /* CustomRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE8D221D07D50009882F /* CustomRadioButton.swift */; };
+		4938FE91221D16980009882F /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE90221D16980009882F /* CustomMainButton.swift */; };
+		495DCA76221CDDE100CCCC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA75221CDDE100CCCC8A /* AppDelegate.swift */; };
+		495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA7C221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld */; };
+		495DCA80221CDDE200CCCC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495DCA7F221CDDE200CCCC8A /* Assets.xcassets */; };
+		495DCA83221CDDE200CCCC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */; };
+		495DCA8E221CDDE200CCCC8A /* Barber_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA8D221CDDE200CCCC8A /* Barber_ConnectTests.swift */; };
+		495DCA99221CDDE200CCCC8A /* Barber_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */; };
+		495DCAA7221CDED600CCCC8A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAA6221CDED600CCCC8A /* LoginController.swift */; };
+		495DCAAB221CE0EF00CCCC8A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */; };
+		495DCAAC221CE0EF00CCCC8A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */; };
+		495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */; };
+		495DCAB1221CE40600CCCC8A /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */; };
+		55C8E7F10859CCED55708984 /* Pods_Barber_ConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450B6034E34A36DED771017 /* Pods_Barber_ConnectTests.framework */; };
+		D6729A192AA5E5724168F0E4 /* Pods_Barber_ConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9123F4CEEC4F73D99E5B0252 /* Pods_Barber_ConnectUITests.framework */; };
+		F16CDEE3AD25236BAC9208C2 /* Pods_Barber_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DA6D7DB0299FE8E2175643 /* Pods_Barber_Connect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495DCA8A221CDDE200CCCC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495DCA6A221CDDE100CCCC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495DCA71221CDDE100CCCC8A;
+			remoteInfo = "Barber Connect";
+		};
+		495DCA95221CDDE200CCCC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495DCA6A221CDDE100CCCC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495DCA71221CDDE100CCCC8A;
+			remoteInfo = "Barber Connect";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FB3F55321EE0D82897492A4 /* Pods-Barber Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.release.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.release.xcconfig"; sourceTree = "<group>"; };
+		3D60EF804EFF19C758948072 /* Pods-Barber Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.debug.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.debug.xcconfig"; sourceTree = "<group>"; };
+		488FD34C988A19FA0877F80D /* Pods-Barber ConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-Barber ConnectTests/Pods-Barber ConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4938FE84221CE99C0009882F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		4938FE86221CEEC60009882F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		4938FE89221CFF380009882F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4938FE8D221D07D50009882F /* CustomRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRadioButton.swift; sourceTree = "<group>"; };
+		4938FE90221D16980009882F /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
+		495DCA72221CDDE100CCCC8A /* Barber Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barber Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		495DCA75221CDDE100CCCC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		495DCA7D221CDDE100CCCC8A /* Barber_Connect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Barber_Connect.xcdatamodel; sourceTree = "<group>"; };
+		495DCA7F221CDDE200CCCC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		495DCA82221CDDE200CCCC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		495DCA84221CDDE200CCCC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495DCA89221CDDE200CCCC8A /* Barber ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barber ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		495DCA8D221CDDE200CCCC8A /* Barber_ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber_ConnectTests.swift; sourceTree = "<group>"; };
+		495DCA8F221CDDE200CCCC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495DCA94221CDDE200CCCC8A /* Barber ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barber ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber_ConnectUITests.swift; sourceTree = "<group>"; };
+		495DCA9A221CDDE200CCCC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495DCAA6221CDED600CCCC8A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		5BCA6C41ED0BBD8D4580FB11 /* Pods-Barber ConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectTests.release.xcconfig"; path = "Target Support Files/Pods-Barber ConnectTests/Pods-Barber ConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		74F1EED426C361C93EC6EB96 /* Pods-Barber ConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-Barber ConnectUITests/Pods-Barber ConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9123F4CEEC4F73D99E5B0252 /* Pods_Barber_ConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barber_ConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DA6D7DB0299FE8E2175643 /* Pods_Barber_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barber_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E450B6034E34A36DED771017 /* Pods_Barber_ConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barber_ConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41C77B4CD2CCF72E4A5E28C /* Pods-Barber ConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Barber ConnectUITests/Pods-Barber ConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495DCA6F221CDDE100CCCC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16CDEE3AD25236BAC9208C2 /* Pods_Barber_Connect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA86221CDDE200CCCC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C8E7F10859CCED55708984 /* Pods_Barber_ConnectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA91221CDDE200CCCC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6729A192AA5E5724168F0E4 /* Pods_Barber_ConnectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4938FE83221CE9790009882F /* Color+Hex */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE84221CE99C0009882F /* Color+Hex.swift */,
+			);
+			path = "Color+Hex";
+			sourceTree = "<group>";
+		};
+		4938FE88221CFF0E0009882F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE8F221D16840009882F /* CustomMainButton */,
+				4938FE8C221D07B80009882F /* CustomRadioButton */,
+				4938FE8B221D07AD0009882F /* CustomTextField */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4938FE8B221D07AD0009882F /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE89221CFF380009882F /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		4938FE8C221D07B80009882F /* CustomRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE8D221D07D50009882F /* CustomRadioButton.swift */,
+			);
+			path = CustomRadioButton;
+			sourceTree = "<group>";
+		};
+		4938FE8F221D16840009882F /* CustomMainButton */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE90221D16980009882F /* CustomMainButton.swift */,
+			);
+			path = CustomMainButton;
+			sourceTree = "<group>";
+		};
+		495DCA69221CDDE100CCCC8A = {
+			isa = PBXGroup;
+			children = (
+				495DCA74221CDDE100CCCC8A /* Barber Connect */,
+				495DCA8C221CDDE200CCCC8A /* Barber ConnectTests */,
+				495DCA97221CDDE200CCCC8A /* Barber ConnectUITests */,
+				495DCA73221CDDE100CCCC8A /* Products */,
+				6CB8ABB5ABFC04943CCDD808 /* Pods */,
+				F62C0DD8718CBBA6E82170E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		495DCA73221CDDE100CCCC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495DCA72221CDDE100CCCC8A /* Barber Connect.app */,
+				495DCA89221CDDE200CCCC8A /* Barber ConnectTests.xctest */,
+				495DCA94221CDDE200CCCC8A /* Barber ConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495DCA74221CDDE100CCCC8A /* Barber Connect */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE88221CFF0E0009882F /* Views */,
+				495DCA75221CDDE100CCCC8A /* AppDelegate.swift */,
+				495DCAA6221CDED600CCCC8A /* LoginController.swift */,
+				4938FE86221CEEC60009882F /* RegisterController.swift */,
+				495DCA7F221CDDE200CCCC8A /* Assets.xcassets */,
+				495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */,
+				495DCA84221CDDE200CCCC8A /* Info.plist */,
+				495DCAAD221CE2C100CCCC8A /* Utils */,
+				495DCAA8221CE0B900CCCC8A /* Fonts */,
+				495DCA7C221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld */,
+			);
+			path = "Barber Connect";
+			sourceTree = "<group>";
+		};
+		495DCA8C221CDDE200CCCC8A /* Barber ConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				495DCA8D221CDDE200CCCC8A /* Barber_ConnectTests.swift */,
+				495DCA8F221CDDE200CCCC8A /* Info.plist */,
+			);
+			path = "Barber ConnectTests";
+			sourceTree = "<group>";
+		};
+		495DCA97221CDDE200CCCC8A /* Barber ConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */,
+				495DCA9A221CDDE200CCCC8A /* Info.plist */,
+			);
+			path = "Barber ConnectUITests";
+			sourceTree = "<group>";
+		};
+		495DCAA8221CE0B900CCCC8A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */,
+				495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */,
+				495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */,
+				495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		495DCAAD221CE2C100CCCC8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE83221CE9790009882F /* Color+Hex */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6CB8ABB5ABFC04943CCDD808 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D60EF804EFF19C758948072 /* Pods-Barber Connect.debug.xcconfig */,
+				2FB3F55321EE0D82897492A4 /* Pods-Barber Connect.release.xcconfig */,
+				488FD34C988A19FA0877F80D /* Pods-Barber ConnectTests.debug.xcconfig */,
+				5BCA6C41ED0BBD8D4580FB11 /* Pods-Barber ConnectTests.release.xcconfig */,
+				F41C77B4CD2CCF72E4A5E28C /* Pods-Barber ConnectUITests.debug.xcconfig */,
+				74F1EED426C361C93EC6EB96 /* Pods-Barber ConnectUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F62C0DD8718CBBA6E82170E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3DA6D7DB0299FE8E2175643 /* Pods_Barber_Connect.framework */,
+				E450B6034E34A36DED771017 /* Pods_Barber_ConnectTests.framework */,
+				9123F4CEEC4F73D99E5B0252 /* Pods_Barber_ConnectUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495DCA71221CDDE100CCCC8A /* Barber Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495DCA9D221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber Connect" */;
+			buildPhases = (
+				00604C38BA0C82216E5117D7 /* [CP] Check Pods Manifest.lock */,
+				495DCA6E221CDDE100CCCC8A /* Sources */,
+				495DCA6F221CDDE100CCCC8A /* Frameworks */,
+				495DCA70221CDDE100CCCC8A /* Resources */,
+				A774F1726F38E46A019F75AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Barber Connect";
+			productName = "Barber Connect";
+			productReference = 495DCA72221CDDE100CCCC8A /* Barber Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495DCA88221CDDE200CCCC8A /* Barber ConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495DCAA0221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber ConnectTests" */;
+			buildPhases = (
+				5E5029756689117C2863A784 /* [CP] Check Pods Manifest.lock */,
+				495DCA85221CDDE200CCCC8A /* Sources */,
+				495DCA86221CDDE200CCCC8A /* Frameworks */,
+				495DCA87221CDDE200CCCC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495DCA8B221CDDE200CCCC8A /* PBXTargetDependency */,
+			);
+			name = "Barber ConnectTests";
+			productName = "Barber ConnectTests";
+			productReference = 495DCA89221CDDE200CCCC8A /* Barber ConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		495DCA93221CDDE200CCCC8A /* Barber ConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495DCAA3221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber ConnectUITests" */;
+			buildPhases = (
+				6C012E525BFD9E5D033936C4 /* [CP] Check Pods Manifest.lock */,
+				495DCA90221CDDE200CCCC8A /* Sources */,
+				495DCA91221CDDE200CCCC8A /* Frameworks */,
+				495DCA92221CDDE200CCCC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495DCA96221CDDE200CCCC8A /* PBXTargetDependency */,
+			);
+			name = "Barber ConnectUITests";
+			productName = "Barber ConnectUITests";
+			productReference = 495DCA94221CDDE200CCCC8A /* Barber ConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495DCA6A221CDDE100CCCC8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Jonathan;
+				TargetAttributes = {
+					495DCA71221CDDE100CCCC8A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					495DCA88221CDDE200CCCC8A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 495DCA71221CDDE100CCCC8A;
+					};
+					495DCA93221CDDE200CCCC8A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 495DCA71221CDDE100CCCC8A;
+					};
+				};
+			};
+			buildConfigurationList = 495DCA6D221CDDE100CCCC8A /* Build configuration list for PBXProject "Barber Connect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 495DCA69221CDDE100CCCC8A;
+			productRefGroup = 495DCA73221CDDE100CCCC8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495DCA71221CDDE100CCCC8A /* Barber Connect */,
+				495DCA88221CDDE200CCCC8A /* Barber ConnectTests */,
+				495DCA93221CDDE200CCCC8A /* Barber ConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495DCA70221CDDE100CCCC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495DCAB1221CE40600CCCC8A /* CircularStd-Book.otf in Resources */,
+				495DCA83221CDDE200CCCC8A /* LaunchScreen.storyboard in Resources */,
+				495DCAAB221CE0EF00CCCC8A /* CircularStd-Bold.otf in Resources */,
+				495DCAAC221CE0EF00CCCC8A /* CircularStd-Black.otf in Resources */,
+				495DCA80221CDDE200CCCC8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA87221CDDE200CCCC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA92221CDDE200CCCC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00604C38BA0C82216E5117D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Barber Connect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5029756689117C2863A784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Barber ConnectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C012E525BFD9E5D033936C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Barber ConnectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A774F1726F38E46A019F75AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barber Connect/Pods-Barber Connect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Barber Connect/Pods-Barber Connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495DCA6E221CDDE100CCCC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4938FE8A221CFF380009882F /* CustomTextField.swift in Sources */,
+				4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */,
+				4938FE91221D16980009882F /* CustomMainButton.swift in Sources */,
+				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
+				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
+				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,
+				495DCAA7221CDED600CCCC8A /* LoginController.swift in Sources */,
+				495DCA76221CDDE100CCCC8A /* AppDelegate.swift in Sources */,
+				4938FE8E221D07D50009882F /* CustomRadioButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA85221CDDE200CCCC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495DCA8E221CDDE200CCCC8A /* Barber_ConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495DCA90221CDDE200CCCC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495DCA99221CDDE200CCCC8A /* Barber_ConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495DCA8B221CDDE200CCCC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495DCA71221CDDE100CCCC8A /* Barber Connect */;
+			targetProxy = 495DCA8A221CDDE200CCCC8A /* PBXContainerItemProxy */;
+		};
+		495DCA96221CDDE200CCCC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495DCA71221CDDE100CCCC8A /* Barber Connect */;
+			targetProxy = 495DCA95221CDDE200CCCC8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495DCA82221CDDE200CCCC8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495DCA9B221CDDE200CCCC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		495DCA9C221CDDE200CCCC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495DCA9E221CDDE200CCCC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D60EF804EFF19C758948072 /* Pods-Barber Connect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-Connect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		495DCA9F221CDDE200CCCC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB3F55321EE0D82897492A4 /* Pods-Barber Connect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-Connect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		495DCAA1221CDDE200CCCC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488FD34C988A19FA0877F80D /* Pods-Barber ConnectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber ConnectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barber Connect.app/Barber Connect";
+			};
+			name = Debug;
+		};
+		495DCAA2221CDDE200CCCC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCA6C41ED0BBD8D4580FB11 /* Pods-Barber ConnectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber ConnectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-ConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barber Connect.app/Barber Connect";
+			};
+			name = Release;
+		};
+		495DCAA4221CDDE200CCCC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41C77B4CD2CCF72E4A5E28C /* Pods-Barber ConnectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Barber Connect";
+			};
+			name = Debug;
+		};
+		495DCAA5221CDDE200CCCC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F1EED426C361C93EC6EB96 /* Pods-Barber ConnectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBQ2JLQD83;
+				INFOPLIST_FILE = "Barber ConnectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jon.Barber-ConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Barber Connect";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495DCA6D221CDDE100CCCC8A /* Build configuration list for PBXProject "Barber Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495DCA9B221CDDE200CCCC8A /* Debug */,
+				495DCA9C221CDDE200CCCC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495DCA9D221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495DCA9E221CDDE200CCCC8A /* Debug */,
+				495DCA9F221CDDE200CCCC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495DCAA0221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber ConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495DCAA1221CDDE200CCCC8A /* Debug */,
+				495DCAA2221CDDE200CCCC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495DCAA3221CDDE200CCCC8A /* Build configuration list for PBXNativeTarget "Barber ConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495DCAA4221CDDE200CCCC8A /* Debug */,
+				495DCAA5221CDDE200CCCC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		495DCA7C221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				495DCA7D221CDDE100CCCC8A /* Barber_Connect.xcdatamodel */,
+			);
+			currentVersion = 495DCA7D221CDDE100CCCC8A /* Barber_Connect.xcdatamodel */;
+			path = Barber_Connect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 495DCA6A221CDDE100CCCC8A /* Project object */;
+}
