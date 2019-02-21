@@ -2,13 +2,23 @@
 //  LoginController.swift
 //  Barber Connect
 //
-//  Created by Jonathan on 2/20/19.
+//  Created by Jonathan on 2/19/19.
 //  Copyright © 2019 Jonathan. All rights reserved.
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
-class LoginController: FormModal {
+class LoginViewController: UIViewController {
+    
+    // Controller Header
+    private let controllerHeader:UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Log in your Account"
+        label.font = UIFont.customFont(fontName: "CircularStd-Book", size: 30)
+        return label
+    }()
     
     // Email TextField
     private let emailTextField = CustomTextField(placeholder: "Email", title: "Email")
@@ -36,6 +46,33 @@ class LoginController: FormModal {
     // Login Button
     private let loginBtn = CustomMainButton(title: "Log In", backgroundColor: UIColor("759BFA"))
     
+    // Break Line
+    private let breakLine:UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let line = UIView()
+        line.translatesAutoresizingMaskIntoConstraints = false
+        line.backgroundColor = UIColor("BEBEBE")
+        view.addSubview(line)
+        line.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        line.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        line.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        line.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        let text = UILabel()
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.text = "Or"
+        text.font = UIFont.customFont(fontName: "CircularStd-Book", size: 20)
+        text.textAlignment = .center
+        text.backgroundColor = .white
+        text.textColor = UIColor("9DA7B0")
+        view.addSubview(text)
+        text.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        text.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        text.widthAnchor.constraint(equalToConstant: 52).isActive = true
+        text.heightAnchor.constraint(equalTo: view.heightAnchor)
+        return view
+    }()
+    
     // Facebook Login
     private let facebook = SocialButton(SocialButton.SocialType.facebook)
     
@@ -44,13 +81,44 @@ class LoginController: FormModal {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTitle(title: "Log in your Account")
-        setFields(fields: [emailTextField,passwordTextField])
+        configureUI()
+        handleDegates()
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
     }
     
-    // Overriden Configuration of UI
-    override func configureUI() {
-        super.configureUI()
+    private func handleDegates() {
+        // Email & Password
+        emailTextField.addTarget(self, action: #selector(didbeginEditing), for: .editingDidBegin)
+        emailTextField.addTarget(self, action: #selector(didEndEditing), for: .editingDidEnd)
+        passwordTextField.addTarget(self, action: #selector(didbeginEditing), for: .editingDidBegin)
+        passwordTextField.addTarget(self, action: #selector(didEndEditing), for: .editingDidEnd)
+        
+        // Facbook & Google
+        facebook.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(facebookBtnHandler)))
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(stopEditing)))
+    }
+    
+    private func configureUI() {
+        view.backgroundColor = .white
+        view.addSubview(controllerHeader)
+        NSLayoutConstraint.activate([
+            controllerHeader.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            controllerHeader.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 63)
+            ])
+        let stackView = UIStackView(arrangedSubviews: [emailTextField,passwordTextField])
+        stackView.axis = .vertical
+        stackView.spacing = 17
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
+        NSLayoutConstraint.activate([
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            stackView.topAnchor.constraint(equalTo: controllerHeader.bottomAnchor, constant: 25)
+            ])
         
         view.addSubview(forgotPasswordBtn)
         NSLayoutConstraint.activate([
@@ -73,7 +141,6 @@ class LoginController: FormModal {
             loginBtn.topAnchor.constraint(equalTo: forgotPasswordBtn.bottomAnchor, constant: 44)
             ])
         
-        let breakLine = LineBreak(title: "Or")
         view.addSubview(breakLine)
         NSLayoutConstraint.activate([
             breakLine.topAnchor.constraint(equalTo: loginBtn.bottomAnchor, constant: 26),
@@ -95,48 +162,33 @@ class LoginController: FormModal {
         
     }
     
-    // Overriden Assign Handlers
-    override func assignHandlers() {
-        super.assignHandlers()
-        // Email & Password
-        emailTextField.addTarget(self, action: #selector(didbeginEditing), for: .editingDidBegin)
-        emailTextField.addTarget(self, action: #selector(didEndEditing), for: .editingDidEnd)
-        passwordTextField.addTarget(self, action: #selector(didbeginEditing), for: .editingDidBegin)
-        passwordTextField.addTarget(self, action: #selector(didEndEditing), for: .editingDidEnd)
-        
-        // Facbook & Google
-        facebook.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(facebookBtnHandler)))
-        google.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(googleBtnHandler)))
-        
-    }
-    
 }
 
 // Button Hanlders
-extension LoginController {
+extension LoginViewController {
     
-    // Facebook Handler
+    // Facebook Handlers
     @objc private func facebookBtnHandler() {
-        
+        print("Hello World")
     }
     
-    // Google Handler
-    @objc private func googleBtnHandler() {
-        
-    }
     
 }
 
 
 // Animations
 
-extension LoginController:UITextFieldDelegate {
+extension LoginViewController:UITextFieldDelegate {
     @objc func didbeginEditing() {
         pushUp()
     }
     
     @objc func didEndEditing() {
         pushDown()
+    }
+    
+    @objc func stopEditing() {
+        view.endEditing(true)
     }
     
     private func pushUp() {

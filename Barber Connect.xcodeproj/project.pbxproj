@@ -18,11 +18,15 @@
 		495DCA83221CDDE200CCCC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */; };
 		495DCA8E221CDDE200CCCC8A /* Barber_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA8D221CDDE200CCCC8A /* Barber_ConnectTests.swift */; };
 		495DCA99221CDDE200CCCC8A /* Barber_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */; };
-		495DCAA7221CDED600CCCC8A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAA6221CDED600CCCC8A /* LoginController.swift */; };
+		495DCAA7221CDED600CCCC8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAA6221CDED600CCCC8A /* LoginViewController.swift */; };
 		495DCAAB221CE0EF00CCCC8A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */; };
 		495DCAAC221CE0EF00CCCC8A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */; };
 		495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */; };
 		495DCAB1221CE40600CCCC8A /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */; };
+		49C57E8A221DBCEC00E9FC3E /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E89221DBCEC00E9FC3E /* SocialButton.swift */; };
+		49C57E8F221DCCD400E9FC3E /* FormModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E8E221DCCD400E9FC3E /* FormModal.swift */; };
+		49C57E91221DCD6000E9FC3E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E90221DCD6000E9FC3E /* LoginController.swift */; };
+		49C57E93221DD15400E9FC3E /* LineBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E92221DD15400E9FC3E /* LineBreak.swift */; };
 		55C8E7F10859CCED55708984 /* Pods_Barber_ConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E450B6034E34A36DED771017 /* Pods_Barber_ConnectTests.framework */; };
 		D6729A192AA5E5724168F0E4 /* Pods_Barber_ConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9123F4CEEC4F73D99E5B0252 /* Pods_Barber_ConnectUITests.framework */; };
 		F16CDEE3AD25236BAC9208C2 /* Pods_Barber_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DA6D7DB0299FE8E2175643 /* Pods_Barber_Connect.framework */; };
@@ -66,11 +70,15 @@
 		495DCA94221CDDE200CCCC8A /* Barber ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barber ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber_ConnectUITests.swift; sourceTree = "<group>"; };
 		495DCA9A221CDDE200CCCC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		495DCAA6221CDED600CCCC8A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		495DCAA6221CDED600CCCC8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		49C57E89221DBCEC00E9FC3E /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
+		49C57E8E221DCCD400E9FC3E /* FormModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModal.swift; sourceTree = "<group>"; };
+		49C57E90221DCD6000E9FC3E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		49C57E92221DD15400E9FC3E /* LineBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreak.swift; sourceTree = "<group>"; };
 		5BCA6C41ED0BBD8D4580FB11 /* Pods-Barber ConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectTests.release.xcconfig"; path = "Target Support Files/Pods-Barber ConnectTests/Pods-Barber ConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 		74F1EED426C361C93EC6EB96 /* Pods-Barber ConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-Barber ConnectUITests/Pods-Barber ConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9123F4CEEC4F73D99E5B0252 /* Pods_Barber_ConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barber_ConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +129,7 @@
 				4938FE8F221D16840009882F /* CustomMainButton */,
 				4938FE8C221D07B80009882F /* CustomRadioButton */,
 				4938FE8B221D07AD0009882F /* CustomTextField */,
+				49C57E8B221DCB6100E9FC3E /* SocialButton */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,7 +185,9 @@
 			children = (
 				4938FE88221CFF0E0009882F /* Views */,
 				495DCA75221CDDE100CCCC8A /* AppDelegate.swift */,
-				495DCAA6221CDED600CCCC8A /* LoginController.swift */,
+				495DCAA6221CDED600CCCC8A /* LoginViewController.swift */,
+				49C57E90221DCD6000E9FC3E /* LoginController.swift */,
+				49C57E92221DD15400E9FC3E /* LineBreak.swift */,
 				4938FE86221CEEC60009882F /* RegisterController.swift */,
 				495DCA7F221CDDE200CCCC8A /* Assets.xcassets */,
 				495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */,
@@ -184,6 +195,7 @@
 				495DCAAD221CE2C100CCCC8A /* Utils */,
 				495DCAA8221CE0B900CCCC8A /* Fonts */,
 				495DCA7C221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld */,
+				49C57E8E221DCCD400E9FC3E /* FormModal.swift */,
 			);
 			path = "Barber Connect";
 			sourceTree = "<group>";
@@ -223,6 +235,14 @@
 				4938FE83221CE9790009882F /* Color+Hex */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		49C57E8B221DCB6100E9FC3E /* SocialButton */ = {
+			isa = PBXGroup;
+			children = (
+				49C57E89221DBCEC00E9FC3E /* SocialButton.swift */,
+			);
+			path = SocialButton;
 			sourceTree = "<group>";
 		};
 		6CB8ABB5ABFC04943CCDD808 /* Pods */ = {
@@ -477,14 +497,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4938FE8A221CFF380009882F /* CustomTextField.swift in Sources */,
+				49C57E91221DCD6000E9FC3E /* LoginController.swift in Sources */,
 				4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */,
+				49C57E8A221DBCEC00E9FC3E /* SocialButton.swift in Sources */,
+				49C57E93221DD15400E9FC3E /* LineBreak.swift in Sources */,
 				4938FE91221D16980009882F /* CustomMainButton.swift in Sources */,
 				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
 				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
 				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,
-				495DCAA7221CDED600CCCC8A /* LoginController.swift in Sources */,
+				495DCAA7221CDED600CCCC8A /* LoginViewController.swift in Sources */,
 				495DCA76221CDDE100CCCC8A /* AppDelegate.swift in Sources */,
 				4938FE8E221D07D50009882F /* CustomRadioButton.swift in Sources */,
+				49C57E8F221DCCD400E9FC3E /* FormModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

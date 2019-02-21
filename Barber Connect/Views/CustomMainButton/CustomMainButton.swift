@@ -15,13 +15,14 @@ class CustomMainButton: UIButton {
         self.setTitle(title, for: .normal)
         self.setTitleColor(.white, for: .normal)
         self.backgroundColor = backgroundColor
+        self.titleLabel?.font = UIFont.customFont(fontName: "CircularStd-Book", size: 22)
     }
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.cornerRadius = 5
-        self.titleLabel?.font = UIFont.customFont(fontName: "CircularStd-Book", size: 22)
     }
     
     required init?(coder aDecoder: NSCoder) {
