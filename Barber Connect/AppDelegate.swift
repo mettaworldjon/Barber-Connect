@@ -16,10 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        projectDefaults()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = LoginController()
+        window?.rootViewController = UINavigationController(rootViewController: LoginController()) 
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    private func projectDefaults() {
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().tintColor = UIColor("  B1B6BC")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

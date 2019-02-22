@@ -46,9 +46,10 @@ class LoginController: FormModal {
         super.viewDidLoad()
         setTitle(title: "Log in your Account")
         setFields(fields: [emailTextField,passwordTextField])
+        setFooterBtnTitle(title: "New user? Signup", attributedString: nil)
     }
     
-    // Overriden Configuration of UI
+    // Overriding Configuration of UI
     override func configureUI() {
         super.configureUI()
         
@@ -108,6 +109,9 @@ class LoginController: FormModal {
         facebook.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(facebookBtnHandler)))
         google.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(googleBtnHandler)))
         
+        // Sign Up Launcher
+        setFooterTarget(selector: #selector(launchSignUpVC))
+        
     }
     
 }
@@ -123,6 +127,12 @@ extension LoginController {
     // Google Handler
     @objc private func googleBtnHandler() {
         
+    }
+    
+    // Launch SignUp Controller
+    @objc private func launchSignUpVC() {
+        let registerVC = RegisterController()
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
     
 }

@@ -29,6 +29,16 @@ class FormModal: UIViewController {
         sv.spacing = 17
         return sv
     }()
+    
+    // Footer Button
+    private let footerButton:UIButton = {
+        let btn = UIButton(type: .system)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.titleLabel?.font = UIFont.customFont(fontName: "HelveticaNeue", size: 16)
+        btn.setTitleColor(UIColor("273D52"), for: .normal)
+        return btn
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +54,7 @@ class FormModal: UIViewController {
         view.addSubview(controllerHeader)
         NSLayoutConstraint.activate([
             controllerHeader.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            controllerHeader.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 63)
+            controllerHeader.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 33)
             ])
         
         view.addSubview(stackView)
@@ -52,6 +62,12 @@ class FormModal: UIViewController {
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             stackView.topAnchor.constraint(equalTo: controllerHeader.bottomAnchor, constant: 25)
+            ])
+        
+        view.addSubview(footerButton)
+        NSLayoutConstraint.activate([
+            footerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            footerButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -14)
             ])
     }
     
@@ -70,6 +86,21 @@ class FormModal: UIViewController {
         for item in fields {
             stackView.addArrangedSubview(item)
         }
+    }
+    
+    // Set Footer Button
+    func setFooterBtnTitle(title:String?, attributedString:NSAttributedString?) {
+        if let atti = attributedString {
+            footerButton.setAttributedTitle(atti, for: .normal)
+        } else {
+            footerButton.setTitle(title, for: .normal)
+            
+        }
+    }
+    
+    // Set Footer Target
+    func setFooterTarget(selector:Selector) {
+        footerButton.addTarget(self, action: selector, for: .touchUpInside)
     }
     
     @objc private func stopEditing() {

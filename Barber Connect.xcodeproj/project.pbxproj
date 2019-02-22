@@ -18,7 +18,6 @@
 		495DCA83221CDDE200CCCC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */; };
 		495DCA8E221CDDE200CCCC8A /* Barber_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA8D221CDDE200CCCC8A /* Barber_ConnectTests.swift */; };
 		495DCA99221CDDE200CCCC8A /* Barber_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */; };
-		495DCAA7221CDED600CCCC8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAA6221CDED600CCCC8A /* LoginViewController.swift */; };
 		495DCAAB221CE0EF00CCCC8A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */; };
 		495DCAAC221CE0EF00CCCC8A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */; };
 		495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */; };
@@ -70,7 +69,6 @@
 		495DCA94221CDDE200CCCC8A /* Barber ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barber ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495DCA98221CDDE200CCCC8A /* Barber_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber_ConnectUITests.swift; sourceTree = "<group>"; };
 		495DCA9A221CDDE200CCCC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		495DCAA6221CDED600CCCC8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		495DCAA9221CE0EF00CCCC8A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
@@ -126,10 +124,7 @@
 		4938FE88221CFF0E0009882F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4938FE8F221D16840009882F /* CustomMainButton */,
-				4938FE8C221D07B80009882F /* CustomRadioButton */,
-				4938FE8B221D07AD0009882F /* CustomTextField */,
-				49C57E8B221DCB6100E9FC3E /* SocialButton */,
+				49474A24221FA69D00841365 /* Misc */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +153,58 @@
 			path = CustomMainButton;
 			sourceTree = "<group>";
 		};
+		49474A23221FA68800841365 /* LineBreak */ = {
+			isa = PBXGroup;
+			children = (
+				49C57E92221DD15400E9FC3E /* LineBreak.swift */,
+			);
+			path = LineBreak;
+			sourceTree = "<group>";
+		};
+		49474A24221FA69D00841365 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE8F221D16840009882F /* CustomMainButton */,
+				4938FE8C221D07B80009882F /* CustomRadioButton */,
+				4938FE8B221D07AD0009882F /* CustomTextField */,
+				49C57E8B221DCB6100E9FC3E /* SocialButton */,
+				49474A23221FA68800841365 /* LineBreak */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		49474A25221FA6DC00841365 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				49C57E90221DCD6000E9FC3E /* LoginController.swift */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		49474A26221FA6F300841365 /* FormModal */ = {
+			isa = PBXGroup;
+			children = (
+				49C57E8E221DCCD400E9FC3E /* FormModal.swift */,
+			);
+			path = FormModal;
+			sourceTree = "<group>";
+		};
+		49474A27221FA6FD00841365 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				49474A26221FA6F300841365 /* FormModal */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		49474A28221FA70700841365 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49474A25221FA6DC00841365 /* LoginController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		495DCA69221CDDE100CCCC8A = {
 			isa = PBXGroup;
 			children = (
@@ -183,11 +230,10 @@
 		495DCA74221CDDE100CCCC8A /* Barber Connect */ = {
 			isa = PBXGroup;
 			children = (
-				4938FE88221CFF0E0009882F /* Views */,
 				495DCA75221CDDE100CCCC8A /* AppDelegate.swift */,
-				495DCAA6221CDED600CCCC8A /* LoginViewController.swift */,
-				49C57E90221DCD6000E9FC3E /* LoginController.swift */,
-				49C57E92221DD15400E9FC3E /* LineBreak.swift */,
+				4938FE88221CFF0E0009882F /* Views */,
+				49474A28221FA70700841365 /* Controllers */,
+				49474A27221FA6FD00841365 /* Modal */,
 				4938FE86221CEEC60009882F /* RegisterController.swift */,
 				495DCA7F221CDDE200CCCC8A /* Assets.xcassets */,
 				495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */,
@@ -195,7 +241,6 @@
 				495DCAAD221CE2C100CCCC8A /* Utils */,
 				495DCAA8221CE0B900CCCC8A /* Fonts */,
 				495DCA7C221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld */,
-				49C57E8E221DCCD400E9FC3E /* FormModal.swift */,
 			);
 			path = "Barber Connect";
 			sourceTree = "<group>";
@@ -505,7 +550,6 @@
 				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
 				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
 				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,
-				495DCAA7221CDED600CCCC8A /* LoginViewController.swift in Sources */,
 				495DCA76221CDDE100CCCC8A /* AppDelegate.swift in Sources */,
 				4938FE8E221D07D50009882F /* CustomRadioButton.swift in Sources */,
 				49C57E8F221DCCD400E9FC3E /* FormModal.swift in Sources */,
