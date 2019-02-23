@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492548802220D70B0033ED6B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925487F2220D70B0033ED6B /* HomeController.swift */; };
+		492548822220DCAC0033ED6B /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492548812220DCAC0033ED6B /* Color+Theme.swift */; };
+		492548842220E0E10033ED6B /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492548832220E0E10033ED6B /* SearchHomeView.swift */; };
+		492548872220E82D0033ED6B /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492548862220E82D0033ED6B /* SearchBarView.swift */; };
 		4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE84221CE99C0009882F /* Color+Hex.swift */; };
 		4938FE87221CEEC60009882F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE86221CEEC60009882F /* RegisterController.swift */; };
 		4938FE8A221CFF380009882F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE89221CFF380009882F /* CustomTextField.swift */; };
@@ -52,6 +56,10 @@
 		2FB3F55321EE0D82897492A4 /* Pods-Barber Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.release.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.release.xcconfig"; sourceTree = "<group>"; };
 		3D60EF804EFF19C758948072 /* Pods-Barber Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.debug.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		488FD34C988A19FA0877F80D /* Pods-Barber ConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-Barber ConnectTests/Pods-Barber ConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4925487F2220D70B0033ED6B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		492548812220DCAC0033ED6B /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		492548832220E0E10033ED6B /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
+		492548862220E82D0033ED6B /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		4938FE84221CE99C0009882F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		4938FE86221CEEC60009882F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		4938FE89221CFF380009882F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -113,6 +121,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4925487E222088930033ED6B /* RegisterController */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE86221CEEC60009882F /* RegisterController.swift */,
+			);
+			path = RegisterController;
+			sourceTree = "<group>";
+		};
+		492548852220E81C0033ED6B /* SeachBar */ = {
+			isa = PBXGroup;
+			children = (
+				492548862220E82D0033ED6B /* SearchBarView.swift */,
+			);
+			path = SeachBar;
+			sourceTree = "<group>";
+		};
+		492548882220F2B30033ED6B /* SearchHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				492548832220E0E10033ED6B /* SearchHomeView.swift */,
+			);
+			path = SearchHomeView;
+			sourceTree = "<group>";
+		};
+		492548892220F2C90033ED6B /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				4925487F2220D70B0033ED6B /* HomeController.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		4925488A222116960033ED6B /* Color+Theme */ = {
+			isa = PBXGroup;
+			children = (
+				492548812220DCAC0033ED6B /* Color+Theme.swift */,
+			);
+			path = "Color+Theme";
+			sourceTree = "<group>";
+		};
 		4938FE83221CE9790009882F /* Color+Hex */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +172,7 @@
 		4938FE88221CFF0E0009882F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				492548882220F2B30033ED6B /* SearchHomeView */,
 				49474A24221FA69D00841365 /* Misc */,
 			);
 			path = Views;
@@ -164,6 +213,7 @@
 		49474A24221FA69D00841365 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				492548852220E81C0033ED6B /* SeachBar */,
 				4938FE8F221D16840009882F /* CustomMainButton */,
 				4938FE8C221D07B80009882F /* CustomRadioButton */,
 				4938FE8B221D07AD0009882F /* CustomTextField */,
@@ -201,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				49474A25221FA6DC00841365 /* LoginController */,
+				4925487E222088930033ED6B /* RegisterController */,
+				492548892220F2C90033ED6B /* HomeController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,7 +286,6 @@
 				4938FE88221CFF0E0009882F /* Views */,
 				49474A28221FA70700841365 /* Controllers */,
 				49474A27221FA6FD00841365 /* Modal */,
-				4938FE86221CEEC60009882F /* RegisterController.swift */,
 				495DCA7F221CDDE200CCCC8A /* Assets.xcassets */,
 				495DCA81221CDDE200CCCC8A /* LaunchScreen.storyboard */,
 				495DCA84221CDDE200CCCC8A /* Info.plist */,
@@ -278,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				4938FE83221CE9790009882F /* Color+Hex */,
+				4925488A222116960033ED6B /* Color+Theme */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -545,10 +597,14 @@
 				49C57E91221DCD6000E9FC3E /* LoginController.swift in Sources */,
 				4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */,
 				49C57E8A221DBCEC00E9FC3E /* SocialButton.swift in Sources */,
+				492548872220E82D0033ED6B /* SearchBarView.swift in Sources */,
 				49C57E93221DD15400E9FC3E /* LineBreak.swift in Sources */,
 				4938FE91221D16980009882F /* CustomMainButton.swift in Sources */,
+				492548802220D70B0033ED6B /* HomeController.swift in Sources */,
 				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
 				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
+				492548822220DCAC0033ED6B /* Color+Theme.swift in Sources */,
+				492548842220E0E10033ED6B /* SearchHomeView.swift in Sources */,
 				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,
 				495DCA76221CDDE100CCCC8A /* AppDelegate.swift in Sources */,
 				4938FE8E221D07D50009882F /* CustomRadioButton.swift in Sources */,

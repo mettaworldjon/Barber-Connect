@@ -18,6 +18,7 @@ class FormModal: UIViewController {
         label.text = "Log in your Account"
         label.font = UIFont.customFont(fontName: "CircularStd-Book", size: 30)
         label.textColor = UIColor("3E4A59")
+        label.backgroundColor = .white
         return label
     }()
     
@@ -54,7 +55,8 @@ class FormModal: UIViewController {
         view.addSubview(controllerHeader)
         NSLayoutConstraint.activate([
             controllerHeader.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            controllerHeader.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 33)
+            controllerHeader.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 33),
+            controllerHeader.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)
             ])
         
         view.addSubview(stackView)
@@ -107,4 +109,22 @@ class FormModal: UIViewController {
         view.endEditing(true)
     }
     
+    
+    // Animations
+    
+    @objc func didbeginEditing() {
+        pushUp()
+    }
+    
+    @objc func didEndEditing() {
+        pushDown()
+    }
+    
+    func pushUp() {
+        
+    }
+    
+    func pushDown() {
+        
+    }
 }

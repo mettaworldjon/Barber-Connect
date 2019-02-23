@@ -114,6 +114,18 @@ class LoginController: FormModal {
         
     }
     
+    override func pushUp() {
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+            self.loginBtn.transform = CGAffineTransform(translationX: 0, y: -25)
+        }, completion: nil)
+    }
+    
+    override func pushDown() {
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+            self.loginBtn.transform = .identity
+        }, completion: nil)
+    }
+    
 }
 
 // Button Hanlders
@@ -138,26 +150,3 @@ extension LoginController {
 }
 
 
-// Animations
-
-extension LoginController:UITextFieldDelegate {
-    @objc func didbeginEditing() {
-        pushUp()
-    }
-    
-    @objc func didEndEditing() {
-        pushDown()
-    }
-    
-    private func pushUp() {
-        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
-            self.loginBtn.transform = CGAffineTransform(translationX: 0, y: -20)
-        }, completion: nil)
-    }
-    
-    private func pushDown() {
-        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
-            self.loginBtn.transform = .identity
-        }, completion: nil)
-    }
-}
