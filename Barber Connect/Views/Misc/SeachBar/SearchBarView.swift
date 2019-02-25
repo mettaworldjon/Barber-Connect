@@ -41,14 +41,19 @@ class SearchBarView: UIView {
             searchField.centerYAnchor.constraint(equalTo: searchIcon.centerYAnchor)
             ])
         
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(startEditing)))
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Increase Touch Friendliness
     @objc func startEditing() {
-        
+        searchField.becomeFirstResponder()
     }
     
 }
+
+

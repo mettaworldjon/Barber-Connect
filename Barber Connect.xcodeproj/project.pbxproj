@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490A89C3222383BC003323CD /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A89C2222383BC003323CD /* UIView+Shadow.swift */; };
+		490A89C722238610003323CD /* SectionOneContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A89C622238610003323CD /* SectionOneContainer.swift */; };
 		492548802220D70B0033ED6B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925487F2220D70B0033ED6B /* HomeController.swift */; };
 		492548822220DCAC0033ED6B /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492548812220DCAC0033ED6B /* Color+Theme.swift */; };
 		492548842220E0E10033ED6B /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492548832220E0E10033ED6B /* SearchHomeView.swift */; };
@@ -56,6 +58,8 @@
 		2FB3F55321EE0D82897492A4 /* Pods-Barber Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.release.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.release.xcconfig"; sourceTree = "<group>"; };
 		3D60EF804EFF19C758948072 /* Pods-Barber Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber Connect.debug.xcconfig"; path = "Target Support Files/Pods-Barber Connect/Pods-Barber Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		488FD34C988A19FA0877F80D /* Pods-Barber ConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barber ConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-Barber ConnectTests/Pods-Barber ConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		490A89C2222383BC003323CD /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		490A89C622238610003323CD /* SectionOneContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneContainer.swift; sourceTree = "<group>"; };
 		4925487F2220D70B0033ED6B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		492548812220DCAC0033ED6B /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		492548832220E0E10033ED6B /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490A89C4222383D4003323CD /* UIView+Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				490A89C2222383BC003323CD /* UIView+Shadow.swift */,
+			);
+			path = "UIView+Shadow";
+			sourceTree = "<group>";
+		};
+		490A89C5222385D0003323CD /* SectionOneContainer */ = {
+			isa = PBXGroup;
+			children = (
+				490A89C622238610003323CD /* SectionOneContainer.swift */,
+			);
+			path = SectionOneContainer;
+			sourceTree = "<group>";
+		};
 		4925487E222088930033ED6B /* RegisterController */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +192,7 @@
 		4938FE88221CFF0E0009882F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				490A89C5222385D0003323CD /* SectionOneContainer */,
 				492548882220F2B30033ED6B /* SearchHomeView */,
 				49474A24221FA69D00841365 /* Misc */,
 			);
@@ -330,6 +351,7 @@
 			children = (
 				4938FE83221CE9790009882F /* Color+Hex */,
 				4925488A222116960033ED6B /* Color+Theme */,
+				490A89C4222383D4003323CD /* UIView+Shadow */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -603,6 +625,8 @@
 				492548802220D70B0033ED6B /* HomeController.swift in Sources */,
 				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
 				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
+				490A89C722238610003323CD /* SectionOneContainer.swift in Sources */,
+				490A89C3222383BC003323CD /* UIView+Shadow.swift in Sources */,
 				492548822220DCAC0033ED6B /* Color+Theme.swift in Sources */,
 				492548842220E0E10033ED6B /* SearchHomeView.swift in Sources */,
 				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,
