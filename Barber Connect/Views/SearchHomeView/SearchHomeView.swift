@@ -25,7 +25,7 @@ class SearchHomeView: UICollectionViewCell {
     private let subHeader:UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Seach a fresh one"
+        label.text = "Search a fresh one"
         label.textColor = UIColor.fadeGray()
         return label
     }()

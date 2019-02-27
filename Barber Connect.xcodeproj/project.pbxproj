@@ -28,6 +28,9 @@
 		495DCAAC221CE0EF00CCCC8A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */; };
 		495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */; };
 		495DCAB1221CE40600CCCC8A /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */; };
+		49B1CE0622260F9800F36F86 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CE0522260F9800F36F86 /* CardViewCell.swift */; };
+		49B1CE08222630AA00F36F86 /* Cosmos+RatingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CE07222630AA00F36F86 /* Cosmos+RatingSystem.swift */; };
+		49B1CE0A2226399800F36F86 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CE092226399800F36F86 /* SectionCell.swift */; };
 		49C57E8A221DBCEC00E9FC3E /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E89221DBCEC00E9FC3E /* SocialButton.swift */; };
 		49C57E8F221DCCD400E9FC3E /* FormModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E8E221DCCD400E9FC3E /* FormModal.swift */; };
 		49C57E91221DCD6000E9FC3E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C57E90221DCD6000E9FC3E /* LoginController.swift */; };
@@ -85,6 +88,9 @@
 		495DCAAA221CE0EF00CCCC8A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		495DCAAE221CE2CC00CCCC8A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		495DCAB0221CE40600CCCC8A /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		49B1CE0522260F9800F36F86 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		49B1CE07222630AA00F36F86 /* Cosmos+RatingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cosmos+RatingSystem.swift"; sourceTree = "<group>"; };
+		49B1CE092226399800F36F86 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		49C57E89221DBCEC00E9FC3E /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 		49C57E8E221DCCD400E9FC3E /* FormModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModal.swift; sourceTree = "<group>"; };
 		49C57E90221DCD6000E9FC3E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -192,8 +198,10 @@
 		4938FE88221CFF0E0009882F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				490A89C5222385D0003323CD /* SectionOneContainer */,
 				492548882220F2B30033ED6B /* SearchHomeView */,
+				49B1CE0C22263E8C00F36F86 /* SectionCell */,
+				490A89C5222385D0003323CD /* SectionOneContainer */,
+				49B1CE0422260F2B00F36F86 /* CardView */,
 				49474A24221FA69D00841365 /* Misc */,
 			);
 			path = Views;
@@ -352,8 +360,33 @@
 				4938FE83221CE9790009882F /* Color+Hex */,
 				4925488A222116960033ED6B /* Color+Theme */,
 				490A89C4222383D4003323CD /* UIView+Shadow */,
+				49B1CE0B22263E7300F36F86 /* Cosmos+RatingSystem */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		49B1CE0422260F2B00F36F86 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CE0522260F9800F36F86 /* CardViewCell.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		49B1CE0B22263E7300F36F86 /* Cosmos+RatingSystem */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CE07222630AA00F36F86 /* Cosmos+RatingSystem.swift */,
+			);
+			path = "Cosmos+RatingSystem";
+			sourceTree = "<group>";
+		};
+		49B1CE0C22263E8C00F36F86 /* SectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				49B1CE092226399800F36F86 /* SectionCell.swift */,
+			);
+			path = SectionCell;
 			sourceTree = "<group>";
 		};
 		49C57E8B221DCB6100E9FC3E /* SocialButton */ = {
@@ -616,6 +649,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4938FE8A221CFF380009882F /* CustomTextField.swift in Sources */,
+				49B1CE08222630AA00F36F86 /* Cosmos+RatingSystem.swift in Sources */,
 				49C57E91221DCD6000E9FC3E /* LoginController.swift in Sources */,
 				4938FE85221CE99C0009882F /* Color+Hex.swift in Sources */,
 				49C57E8A221DBCEC00E9FC3E /* SocialButton.swift in Sources */,
@@ -623,10 +657,12 @@
 				49C57E93221DD15400E9FC3E /* LineBreak.swift in Sources */,
 				4938FE91221D16980009882F /* CustomMainButton.swift in Sources */,
 				492548802220D70B0033ED6B /* HomeController.swift in Sources */,
+				49B1CE0A2226399800F36F86 /* SectionCell.swift in Sources */,
 				495DCA7E221CDDE100CCCC8A /* Barber_Connect.xcdatamodeld in Sources */,
 				4938FE87221CEEC60009882F /* RegisterController.swift in Sources */,
 				490A89C722238610003323CD /* SectionOneContainer.swift in Sources */,
 				490A89C3222383BC003323CD /* UIView+Shadow.swift in Sources */,
+				49B1CE0622260F9800F36F86 /* CardViewCell.swift in Sources */,
 				492548822220DCAC0033ED6B /* Color+Theme.swift in Sources */,
 				492548842220E0E10033ED6B /* SearchHomeView.swift in Sources */,
 				495DCAAF221CE2CC00CCCC8A /* CustomFonts.swift in Sources */,

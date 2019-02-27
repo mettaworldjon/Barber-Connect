@@ -70,7 +70,7 @@ class HomeController: UICollectionViewController,UICollectionViewDelegateFlowLay
         case 0:
             return CGSize(width: view.frame.width, height: 139)
         case 1:
-            return CGSize(width: view.frame.width, height: 261)
+            return CGSize(width: view.frame.width, height: 271)
         default:
             return CGSize.zero
         }

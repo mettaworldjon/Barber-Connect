@@ -8,53 +8,76 @@
 
 import UIKit
 
-class SectionOneContainer: UICollectionViewCell, UICollectionViewDelegateFlowLayout {
+class SectionOneContainer: SectionCell {
     
+    // Card ID
+    private let cardID = "cardID"
     
-    // Container Title
-    private let title:UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.customFont(fontName: "CircularStd-Bold", size: 17)
-        label.textColor = UIColor.mainTextColor()
-        label.text = "Near By Saloon"
-        return label
-    }()
-    
-    // See All Button
-    private let seeAllBtn:UIButton = {
-        let btn = UIButton(type: .system)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Sell All (8)", for: .normal)
-        btn.setTitleColor(UIColor.secondaryTextColor(), for: .normal)
-        btn.titleLabel?.font = UIFont.customFont(fontName: "CircularStd-Book", size: 12)
-        return btn
+    // Collection
+    private let collection:UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 18
+        layout.minimumLineSpacing = 18
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        collection.backgroundColor = .white
+        return collection
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureUI()
+        collectionFigure()
     }
     
-    // UI Configuration
-    private func configureUI() {
-        self.addSubview(title)
+    override func configureUI() {
+        super.configureUI()
+        self.addSubview(collection)
         NSLayoutConstraint.activate([
-            title.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            title.topAnchor.constraint(equalTo: self.topAnchor)
-            ])
-        
-        self.addSubview(seeAllBtn)
-        NSLayoutConstraint.activate([
-            seeAllBtn.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            seeAllBtn.topAnchor.constraint(equalTo: self.topAnchor)
+            collection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            collection.topAnchor.constraint(equalTo: self.topAnchor, constant: 42),
+            collection.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            collection.bottomAnchor.constraint(equalTo: self.bottomAnchor)
             ])
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+// Collection View Configuration
+extension SectionOneContainer: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    // Configuration
+    private func collectionFigure() {
+        collection.delegate = self
+        collection.dataSource = self
+        collection.register(CardViewCell.self, forCellWithReuseIdentifier: cardID)
+        
+    }
+    
+    // Cell Inset
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 19, bottom: 0, right: 0)
+    }
+    
+    // Size for card
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 228, height: 195)
+    }
+    
+    // Cell Number of Items
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    // Cell Rendering
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cardID, for: indexPath) as! CardViewCell
+        return cell
+    }
     
 }
